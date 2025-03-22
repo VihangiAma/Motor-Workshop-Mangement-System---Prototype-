@@ -5,22 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimal Motors - Garage Management</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="logo">Nimal Motors</div>
+    
+   <!-- Header Section -->
+   <header>
+    <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo.jpg" alt="Garage Logo">
+        </div>
+
+        <!-- Navigation Bar -->
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#packages">Packages</a></li>
-                <li><a href="#sections">Sections</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Sections</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header>
+
+        <!-- Right Section (Book Now & User Account) -->
+        <div class="right-section">
+            <button class="book-now">Book Now</button>
+            
+        </div>
+<div class="user-account">
+                <i class="fa-solid fa-circle-user"></i>
+                
+            </div>
+
+    </div>
+</header>
+<section class="slideshow">
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="garage1.jpg" alt="Garage Image 1">
+        </div>
+        <div class="slide fade">
+            <img src="garage2.jpg" alt="Garage Image 2">
+        </div>
+        <div class="slide fade">
+            <img src="garage3.jpg" alt="Garage Image 3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</section>
+
 
     <!-- Home Section (Animations/Images) -->
     <section id="home">
