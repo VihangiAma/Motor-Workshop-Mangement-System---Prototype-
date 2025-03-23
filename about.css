@@ -65,21 +65,90 @@ nav ul li a:hover {
     background: #d62d24;
 }
 
-.about-section {
+.hero {
+    position: relative;
+    background: url('E:/Motor-Workshop-Mangement-System---Prototype-/Images/garage1.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
-    padding: 50px;
 }
 
-.about-section h2 {
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(78, 65, 65, 0.5); /* Dark overlay for readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Company Overview Section */
+.company-overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.company-overview .content {
+    max-width: 600px;
+}
+
+.company-overview img {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.why-choose-us h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-.about-section img {
-    width: 80%;
-    max-width: 600px;
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    padding: 15px;
     border-radius: 10px;
-    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 footer {
