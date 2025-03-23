@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #ff0000;
+    background: #c89999;
     border-radius: 5px;
 }
 
@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 .book-now:hover {
-    background: #e66a00;
+    background: #d62d24;
 }
 
 /* User Account */
