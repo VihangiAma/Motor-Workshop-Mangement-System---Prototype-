@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="appointment.css">
+<script src="appointment.js"></script>
+
+</head>
+<body>
+    <!-- Appointment Form -->
+<div id="appointmentForm" class="form-container">
+    <div class="form-box">
+        <h2>Book Your Appointment</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+            
+            <label for="vehicleType">Vehicle Type</label>
+            <select id="vehicleType" required>
+                <option value="">Select Vehicle Type</option>
+                <option value="Car">Car</option>
+                <option value="Van">Van</option>
+                <option value="SUV">SUV</option>
+                <option value="Truck">Truck</option>
+            </select>
+            
+            <label for="phone">Telephone Number</label>
+            <input type="tel" id="phone" required>
+            
+            <label for="vehicleNumber">Vehicle Number</label>
+            <input type="text" id="vehicleNumber" required>
+            
+            <label for="date">Select Date</label>
+            <select id="date" required></select>
+            
+            <label for="time">Select Time</label>
+            <select id="time" required></select>
+            
+            <button type="submit">Confirm Appointment</button>
+            <button type="button" id="closeForm">Cancel</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
